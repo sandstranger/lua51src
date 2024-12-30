@@ -32,7 +32,7 @@ lundump.c \
 lvm.c \
 lzio.c
 LOCAL_C_INCLUDES := include
-LOCAL_CFLAGS := -O2 -g -ffast-math -fsigned-char -Wall -Wfatal-errors -Wno-deprecated-declarations -Wno-psabi -DANDROID_VERSION -D__ANDROID__
+LOCAL_CFLAGS := -O3 -ffast-math -fsigned-char -Wall -Wfatal-errors -Wno-deprecated-declarations -Wno-psabi -DANDROID_VERSION -D__ANDROID__
 LOCAL_CXXFLAGS := $(LOCAL_CFLAGS) -Wno-write-strings
 
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
